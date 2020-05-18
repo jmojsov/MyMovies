@@ -9,6 +9,11 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MyMovies.Repository;
+using MyMovies.Repository.Interfaces;
+using MyMovies.Services;
+using MyMovies.Services.Interfaces;
+
 
 namespace MyMovies
 {
@@ -33,6 +38,10 @@ namespace MyMovies
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddSingleton<IMovieRepository, MovieFileRepository>();
+            services.AddSingleton<IMoviesService, MoviesService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,7 +66,7 @@ namespace MyMovies
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Movies}/{action=Overview}/{id?}");
             });
         }
     }

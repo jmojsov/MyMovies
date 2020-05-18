@@ -1,0 +1,7 @@
+C:\Users\Joco\Desktop\CODE\MyMovies\Models\bin\Debug\netcoreapp2.2\MyMovies.Models.deps.json
+C:\Users\Joco\Desktop\CODE\MyMovies\Models\bin\Debug\netcoreapp2.2\MyMovies.Models.dll
+C:\Users\Joco\Desktop\CODE\MyMovies\Models\bin\Debug\netcoreapp2.2\MyMovies.Models.pdb
+C:\Users\Joco\Desktop\CODE\MyMovies\Models\obj\Debug\netcoreapp2.2\MyMovies.Models.AssemblyInfoInputs.cache
+C:\Users\Joco\Desktop\CODE\MyMovies\Models\obj\Debug\netcoreapp2.2\MyMovies.Models.AssemblyInfo.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\Models\obj\Debug\netcoreapp2.2\MyMovies.Models.dll
+C:\Users\Joco\Desktop\CODE\MyMovies\Models\obj\Debug\netcoreapp2.2\MyMovies.Models.pdb
