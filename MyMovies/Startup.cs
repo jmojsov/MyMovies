@@ -9,8 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MyMovies.Repository;
-using MyMovies.Repository.Interfaces;
+using MyMovies.Repositories;
+using MyMovies.Repositories.Interfaces;
 using MyMovies.Services;
 using MyMovies.Services.Interfaces;
 
@@ -39,7 +39,7 @@ namespace MyMovies
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddSingleton<IMovieRepository, MovieFileRepository>();
+            services.AddSingleton<IMovieRepository, MovieSqlRepository>();
             services.AddSingleton<IMoviesService, MoviesService>();
 
         }

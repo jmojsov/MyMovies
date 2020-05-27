@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyMovies.Models;
+using MyMovies.Services;
 using MyMovies.Services.Interfaces;
 
 namespace MyMovies.Controllers
@@ -13,11 +14,17 @@ namespace MyMovies.Controllers
             MoviesService = moviesService;
         }
 
-        public IActionResult Overview()
+        public IActionResult Overview(string title)
         {
-            var movies = MoviesService.GetAll();
+            var movies = MoviesService.GetByTitle(title);
 
             return View(movies);
+        }
+
+        public IActionResult Create()
+        {
+            var movie = new Movie();
+            return View(movie);
         }
 
         public IActionResult Details(int id)
@@ -27,16 +34,21 @@ namespace MyMovies.Controllers
             return View(movie);
         }
 
-        public IActionResult Create()
-        {
-            var movie = new Movie();
-            return View(movie);
-        }
+        
 
         [HttpPost]
         public IActionResult Create(Movie movie)
         {
-            return RedirectToAction("Overview");
+            if (ModelState.IsValid)
+            {
+                MoviesService.CreateMovie(movie);
+                return RedirectToAction("Overview");
+
+            }
+            else
+            {
+                return View(movie);
+            }
         }
     }
 }

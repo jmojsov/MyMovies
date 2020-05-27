@@ -1,12 +1,13 @@
 ﻿using MyMovies.Models;
+using MyMovies.Repositories.Interfaces;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MyMovies.Repository
+namespace MyMovies.Repositories
 {
-    public class MovieRepository
+    public class MovieRepository : IMovieRepository
     {
         public List<Movie> Movies { get; set; }
         public MovieRepository()
@@ -50,5 +51,19 @@ namespace MyMovies.Repository
         {
             return Movies.FirstOrDefault(x => x.Id == id);
         }
+
+        public void Add(Movie movie)
+        {
+            var movies = GetAll();
+            var maxId = movies.Max(x => x.Id);
+            movie.Id = maxId + 1;
+            Movies.Add(movie);
+        }
+        public List<Movie> GetByTitle(string title)
+        {
+            throw new NotImplementedException();
+        }
+
+        
     }
 }

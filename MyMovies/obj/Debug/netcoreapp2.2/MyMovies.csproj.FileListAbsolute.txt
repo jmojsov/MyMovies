@@ -1,3 +1,8 @@
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.csprojAssemblyReference.cache
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorAssemblyInfo.cache
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorAssemblyInfo.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.AssemblyInfoInputs.cache
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.AssemblyInfo.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\appsettings.json
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
@@ -14,11 +19,6 @@ C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Se
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Services.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Models.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Repositories.pdb
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.csprojAssemblyReference.cache
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorAssemblyInfo.cache
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorAssemblyInfo.cs
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.AssemblyInfoInputs.cache
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.AssemblyInfo.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.TagHelpers.input.cache
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.TagHelpers.output.cache
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorCoreGenerate.cache
