@@ -1,10 +1,10 @@
 C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\bin\Debug\netcoreapp2.2\MyMovies.Services.deps.json
 C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\bin\Debug\netcoreapp2.2\MyMovies.Services.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\bin\Debug\netcoreapp2.2\MyMovies.Services.pdb
-C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\bin\Debug\netcoreapp2.2\MyMovies.Models.dll
+C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\bin\Debug\netcoreapp2.2\MyMovies.Data.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\bin\Debug\netcoreapp2.2\MyMovies.Repositories.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\bin\Debug\netcoreapp2.2\MyMovies.Repositories.pdb
-C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\bin\Debug\netcoreapp2.2\MyMovies.Models.pdb
+C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\bin\Debug\netcoreapp2.2\MyMovies.Data.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\obj\Debug\netcoreapp2.2\MyMovies.Services.csprojAssemblyReference.cache
 C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\obj\Debug\netcoreapp2.2\MyMovies.Services.AssemblyInfoInputs.cache
 C:\Users\Joco\Desktop\CODE\MyMovies\MovieService\obj\Debug\netcoreapp2.2\MyMovies.Services.AssemblyInfo.cs

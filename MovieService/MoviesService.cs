@@ -1,4 +1,4 @@
-﻿using MyMovies.Models;
+﻿using MyMovies.Data;
 using MyMovies.Repositories.Interfaces;
 using MyMovies.Services.Interfaces;
 using System.Collections.Generic;
@@ -35,6 +35,25 @@ namespace MyMovies.Services
         {
             var movies = MoviesRepo.GetByTitle(title);
             return movies;
+        }
+        public Movie GetMovieDetails(int id)
+        {
+            var movie = MoviesRepo.GetById(id);
+
+            movie.Views += 1;
+            MoviesRepo.Update(movie);
+
+            return movie;
+        }
+
+        public void UpdateMovie(Movie movie)
+        {
+            MoviesRepo.Update(movie);
+        }
+
+        public void Delete(int id)
+        {
+            MoviesRepo.Delete(id);
         }
     }
 }

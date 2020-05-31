@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyMovies.Models;
+using MyMovies.Data;
 using MyMovies.Services;
 using MyMovies.Services.Interfaces;
 
@@ -20,21 +20,17 @@ namespace MyMovies.Controllers
 
             return View(movies);
         }
+        public IActionResult Details(int id)
+        {
+            var movies = MoviesService.GetMovieDetails(id);
 
+            return View(movies);
+        }
         public IActionResult Create()
         {
             var movie = new Movie();
             return View(movie);
         }
-
-        public IActionResult Details(int id)
-        {
-            var movie = MoviesService.GetById(id);
-
-            return View(movie);
-        }
-
-        
 
         [HttpPost]
         public IActionResult Create(Movie movie)
@@ -42,13 +38,38 @@ namespace MyMovies.Controllers
             if (ModelState.IsValid)
             {
                 MoviesService.CreateMovie(movie);
-                return RedirectToAction("Overview");
+                return RedirectToAction("ModifyOverview");
 
             }
             else
             {
                 return View(movie);
             }
+        }
+        public IActionResult ModifyOverview()
+        {
+            var movies = MoviesService.GetAll();
+            return View(movies);
+        }
+        public IActionResult Modify(int id)
+        {
+            var movie = MoviesService.GetById(id);
+            return View(movie);
+        }
+        [HttpPost]
+        public IActionResult Modify(Movie movie)
+        {
+            if (ModelState.IsValid)
+            {
+                MoviesService.UpdateMovie(movie);
+                return RedirectToAction("ModifyOverview");
+            }
+            return View(movie);
+        }
+        public IActionResult Delete(int id)
+        {
+            MoviesService.Delete(id);
+            return RedirectToAction("ModifyOverview");
         }
     }
 }

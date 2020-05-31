@@ -13,11 +13,11 @@ C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.dl
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Views.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Views.pdb
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Models.dll
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Data.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Repositories.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Services.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Services.pdb
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Models.pdb
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Data.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Repositories.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.TagHelpers.input.cache
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.TagHelpers.output.cache
@@ -26,8 +26,11 @@ C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Info\ContactUs.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Movies\Create.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Movies\Details.cshtml.g.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Movies\Modify.cshtml.g.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Movies\ModifyOverview.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Movies\Overview.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorTargetAssemblyInfo.cache
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorTargetAssemblyInfo.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.Views.pdb

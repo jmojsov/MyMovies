@@ -7,8 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MyMovies.Data;
 using MyMovies.Repositories;
 using MyMovies.Repositories.Interfaces;
 using MyMovies.Services;
@@ -36,11 +38,13 @@ namespace MyMovies
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDbContext<MyMoviesContext>(options => options.UseSqlServer("Data Source=.\\SQLEXPRESS; Initial Catalog = MyMovies; Integrated Security = true"));
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddSingleton<IMovieRepository, MovieSqlRepository>();
-            services.AddSingleton<IMoviesService, MoviesService>();
+            services.AddTransient<IMovieRepository, MovieRepository>();
+            services.AddTransient<IMoviesService, MoviesService>();
 
         }
 

@@ -5,3 +5,4 @@ C:\Users\Joco\Desktop\CODE\MyMovies\Models\obj\Debug\netcoreapp2.2\MyMovies.Mode
 C:\Users\Joco\Desktop\CODE\MyMovies\Models\obj\Debug\netcoreapp2.2\MyMovies.Models.AssemblyInfo.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\Models\obj\Debug\netcoreapp2.2\MyMovies.Models.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\Models\obj\Debug\netcoreapp2.2\MyMovies.Models.pdb
+C:\Users\Joco\Desktop\CODE\MyMovies\Models\obj\Debug\netcoreapp2.2\MyMovies.Models.csprojAssemblyReference.cache

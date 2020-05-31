@@ -1,0 +1,8 @@
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies.Data\bin\Debug\netcoreapp2.2\MyMovies.Data.deps.json
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies.Data\bin\Debug\netcoreapp2.2\MyMovies.Data.dll
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies.Data\bin\Debug\netcoreapp2.2\MyMovies.Data.pdb
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies.Data\obj\Debug\netcoreapp2.2\MyMovies.Data.csprojAssemblyReference.cache
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies.Data\obj\Debug\netcoreapp2.2\MyMovies.Data.AssemblyInfoInputs.cache
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies.Data\obj\Debug\netcoreapp2.2\MyMovies.Data.AssemblyInfo.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies.Data\obj\Debug\netcoreapp2.2\MyMovies.Data.dll
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies.Data\obj\Debug\netcoreapp2.2\MyMovies.Data.pdb
