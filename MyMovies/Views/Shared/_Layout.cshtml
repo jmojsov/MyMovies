@@ -4,7 +4,7 @@
     var homeActive = ViewBag.Title == "Home" ? "active" : "";
     var aboutIsActive = ViewBag.Title == "About Us" ? "active" : "";
     var contactIsActive = ViewBag.Title == "Contact Us" ? "active" : "";
-    var createIsActive = ViewBag.Title == "Create" ? "active" : "";
+    var modifyIsActive = ViewBag.Title == "Modify Overview" ? "active" : "";
 }
 
 
@@ -35,9 +35,25 @@
                 <li class="nav-item @contactIsActive">
                     <a class="nav-link" asp-controller="Info" asp-action="ContactUs">Contact Us</a>
                 </li>
-                <li class="nav-item @createIsActive">
-                    <a class="nav-link" asp-controller="Movies" asp-action="ModifyOverview">Modify</a>
+                <li class="nav-item @modifyIsActive">
+                    <a class="nav-link" asp-controller="Movies" asp-action="ModifyOverview">Modify Movies</a>
                 </li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">@User.Identity.Name</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/">Sign Out</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Auth" asp-action="SignIn">Sign In</a>
+                    </li>
+                }
+
             </ul>
         </div>
     </nav>

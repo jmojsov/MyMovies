@@ -52,12 +52,12 @@ namespace MyMovies.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
-                            Cast = "Will Smith, Martin Lawrence, Vanessa Hudgens ",
-                            Description = "Miami detectives Mike Lowrey and Marcus Burnett must face off against a mother-and-son pair of drug lords who wreak vengeful havoc on their city.",
-                            Genre = "action",
-                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
-                            Title = "Bad Boys for Life ",
+                            Id = 2,
+                            Cast = "Matthew Knight, Shawnee Smith, Mike Straub  ",
+                            Description = "A young Japanese woman who holds the key to stopping the evil spirit of Kayako, travels to the haunted Chicago apartment from the sequel, to stop the curse of Kayako once and for all.",
+                            Genre = "horror",
+                            ImageUrl = "https://m.media-amazon.com/images/M/MV5BNGU4MThiYjItMDliMC00YWM4LTljZTEtNTg0YzdiMmE2MjM4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+                            Title = "The Grudge 3 ",
                             Views = 0
                         });
                 });
@@ -68,7 +68,11 @@ namespace MyMovies.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Password")
+                        .IsRequired();
+
+                    b.Property<string>("Username")
+                        .IsRequired();
 
                     b.HasKey("Id");
 

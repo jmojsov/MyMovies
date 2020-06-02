@@ -13,13 +13,13 @@ namespace MyMovies.Data
             modelBuilder.Entity<Movie>().HasData(
                 new Movie
                 {
-                    Id = 1,
-                    Title = "Bad Boys for Life ",
-                    Description = "Miami detectives Mike Lowrey and Marcus Burnett must face off against " +
-                    "a mother-and-son pair of drug lords who wreak vengeful havoc on their city.",
-                    ImageUrl = "https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
-                    Cast = "Will Smith, Martin Lawrence, Vanessa Hudgens ",
-                    Genre = "action"
+                    Id = 2,
+                    Title = "The Grudge 3 ",
+                    Description = "A young Japanese woman who holds the key to stopping the evil spirit of Kayako," +
+                    " travels to the haunted Chicago apartment from the sequel, to stop the curse of Kayako once and for all.",
+                    ImageUrl = "https://m.media-amazon.com/images/M/MV5BNGU4MThiYjItMDliMC00YWM4LTljZTEtNTg0YzdiMmE2MjM4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+                    Cast = "Matthew Knight, Shawnee Smith, Mike Straub  ",
+                    Genre = "horror"
                 });
         }
     }

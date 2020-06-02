@@ -37,3 +37,4 @@ C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.Vi
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.csproj.CopyComplete
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.pdb
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Auth\SignIn.cshtml.g.cs
