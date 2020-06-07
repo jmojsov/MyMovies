@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyMovies.ViewModels
 {
-    public class SignInModel
+    public class SignUpModel
     {
         [Required]
         public string Username { get; set; }
@@ -15,5 +15,9 @@ namespace MyMovies.ViewModels
         [RegularExpression(@"^((?=.*[a-z])(?=.*[A-Z])(?=.*\d)).+$", ErrorMessage = "The password must contain at least one captial letter and one digit")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+        [Required]
+        [DataType(DataType.Password)]
+        [Compare("Password")]
+        public string RepeatPassword { get; set; }
     }
 }

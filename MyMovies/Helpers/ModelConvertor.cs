@@ -1,9 +1,6 @@
 ﻿using MyMovies.Data;
 using MyMovies.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MyMovies.Helpers
 {
@@ -23,9 +20,9 @@ namespace MyMovies.Helpers
             return overviewModel;
         }
 
-        public static MovieDetaislModel ConvertToMovieDetailsModel(Movie movie)
+        public static MovieDetailsModel ConvertToMovieDetailsModel(Movie movie)
         {
-            return new MovieDetaislModel
+            return new MovieDetailsModel
             {
                 Id = movie.Id,
                 Title = movie.Title,

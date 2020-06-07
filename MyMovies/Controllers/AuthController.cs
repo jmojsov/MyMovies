@@ -42,6 +42,42 @@ namespace MyMovies.Controllers
             return View(model);
 
         }
+
+        public async Task<IActionResult> SignOut()
+        {
+            await AuthService.SignOutAsync(HttpContext);
+            return RedirectToAction("Overview", "Movies");
+        }
+        public IActionResult SignUp()
+        {
+            var signUpModel = new SignUpModel();
+            return View(signUpModel);
+        }
+        [HttpPost]
+        public IActionResult SignUp(SignUpModel signUpModel)
+        {
+
+            if (ModelState.IsValid)
+            {
+                var response = AuthService.SignUp(signUpModel.Username, signUpModel.Password);
+                if (response.IsSuccessful)
+                {
+                    return RedirectToAction("SignIn");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, response.Message);
+                    return View(signUpModel);
+                }
+
+            }
+            else
+            {
+
+                return View(signUpModel);
+
+            }
+        }
     }
     
 }

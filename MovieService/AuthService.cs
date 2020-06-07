@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
+using MyMovies.Data;
 using MyMovies.Repositories.Interfaces;
+using MyMovies.Services.DtoModels;
 using MyMovies.Services.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MyMovies.Services
@@ -40,6 +40,36 @@ namespace MyMovies.Services
             }
 
             return false;
+        }
+
+        public async Task SignOutAsync(HttpContext httpContext)
+        {
+            await httpContext.SignOutAsync(); 
+        }
+
+        public SignUpResponse SignUp(string username, string password)
+        {
+            var user = UsersRepo.GetByUsername(username);
+            var response = new SignUpResponse();
+
+            if (user == null)
+            {
+                var newuser = new User();
+                newuser.Username = user.Username;
+                newuser.Password = user.Password;
+
+                UsersRepo.Add(newuser);
+                response.IsSuccessful = true;
+
+                return response;
+            }
+            else
+            {
+                response.IsSuccessful = false;
+                response.Message = "User already exsists";
+                return response;
+
+            }
         }
     }
 }

@@ -38,3 +38,4 @@ C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Auth\SignIn.cshtml.g.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Auth\SignUp.cshtml.g.cs
