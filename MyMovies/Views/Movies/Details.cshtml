@@ -1,20 +1,52 @@
 ﻿@model MyMovies.ViewModels.MovieDetailsModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @{
     Layout = "_Layout";
 }
 
-<img style="width:50%" src="@Model.ImageUrl" />
-<h1 style="text-align:center">@Model.Title</h1>
-<p style="text-align:center">@Model.Description</p>
 
-<h2>Genres:</h2>
-<p>@Model.Cast</p>
+<div class="row">
+    <div class="col-md-9">
+        <img style="width:50%" src="@Model.ImageUrl" />
+        <h1 style="text-align:center">@Model.Title</h1>
+        <p style="text-align:center">@Model.Description</p>
 
-<h2>Cast:</h2>
-<p>@Model.Genre</p>
+        <h2>Genres:</h2>
+        <p>@Model.Cast</p>
 
-<h2>Date Created:</h2>
-<p>@Model.DateCreated</p>
-    
+        <h2>Cast:</h2>
+        <p>@Model.Genre</p>
+
+        <h2>Date Created:</h2>
+        <p>@Model.DateCreated</p>
+
+
+        <h1>Comments</h1>
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <form asp-controller="MovieComments" asp-action="Add" method="post">
+                <input id="movieId" name="movieId" value="@Model" hidden />
+                <div class="form-group">
+                    <label for="comment" class="control-label">Comment</label>
+                    <textarea id="comment" name="comment" class="form-control"></textarea>
+                </div>
+            </form>
+            <input type="submit" value="Create" class="btn btn-primary" />
+
+        }
+
+        <div>
+            @foreach (var comment in Model.MovieComments)
+            {
+                <p>@comment.Comment - @comment.Username - @comment.DateCreated</p>
+            }
+        </div>
+    </div>
+    <div class="col-md-3">
+            <partial name="SidebarPartial" for="SidebarData" />
+    </div>    
+</div>
+
 

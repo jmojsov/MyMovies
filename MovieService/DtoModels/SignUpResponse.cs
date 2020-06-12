@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MyMovies.Services.DtoModels
+﻿namespace MyMovies.Services.DtoModels
 {
     public class SignUpResponse
     {

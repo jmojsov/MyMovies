@@ -37,9 +37,13 @@
 
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <li class="nav-item @modifyIsActive">
-                        <a class="nav-link" asp-controller="Movies" asp-action="ModifyOverview">Modify Movies</a>
-                    </li>
+                    @if (Convert.ToBoolean(User.FindFirst("IsAdmin").Value))
+                    {
+                        <li class="nav-item @modifyIsActive">
+                            <a class="nav-link" asp-controller="Movies" asp-action="ModifyOverview">Modify movies</a>
+                        </li>
+                    }
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="/">@User.Identity.Name</a>
                     </li>

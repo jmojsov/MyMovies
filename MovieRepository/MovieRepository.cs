@@ -29,7 +29,10 @@ namespace MyMovies.Repositories
         }
         public Movie GetById(int id)
         {
-            return Context.Movies.FirstOrDefault(x => x.Id == id);
+            return Context.Movies
+                .Include(x => x.MovieComments)
+                    .ThenInclude(x => x.User)
+                .FirstOrDefault(x => x.Id == id);
         }
 
         

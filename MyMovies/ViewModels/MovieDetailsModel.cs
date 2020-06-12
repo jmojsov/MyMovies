@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MyMovies.Data;
+using MyMovies.Services.DtoModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -17,5 +19,7 @@ namespace MyMovies.ViewModels
         public string Genre { get; set; }
         public DateTime? DateCreated { get; set; }
         public int Views { get; set; }
+        public List<MovieCommentModel> MovieComments { get; set; }
+        public SideBarData SidebarData { get; set; }
     }
 }

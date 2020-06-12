@@ -1,6 +1,7 @@
 ﻿using MyMovies.Data;
 using MyMovies.ViewModels;
 using System;
+using System.Linq;
 
 namespace MyMovies.Helpers
 {
@@ -31,7 +32,18 @@ namespace MyMovies.Helpers
                 Cast = movie.Cast,
                 Genre = movie.Genre,
                 DateCreated = movie.DateCreated,
-                Views = movie.Views
+                Views = movie.Views,
+                MovieComments = movie.MovieComments.Select(x => ConvertToMovieCommentModel(x)).ToList()
+            };
+        }
+
+        private static MovieCommentModel ConvertToMovieCommentModel(MovieComment movieComment)
+        {
+            return new MovieCommentModel
+            {
+                Comment = movieComment.Comment,
+                DateCreated = movieComment.DateCreated,
+                Username = movieComment.User.Username
             };
         }
 

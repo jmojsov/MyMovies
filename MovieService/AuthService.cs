@@ -23,12 +23,14 @@ namespace MyMovies.Services
         {
             var user = UsersRepo.GetByUsername(username);
 
-            if (user != null && user.Password == password)
+            if (user != null && BCrypt.Net.BCrypt.Verify(password, user.Password))
             {
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.NameIdentifier, user.Username),
-                    new Claim(ClaimTypes.Name, user.Username)
+                    new Claim(ClaimTypes.Name, user.Username),
+                    new Claim("IsAdmin", user.IsAdmin.ToString()),
+                    new Claim("Id", user.Id.ToString())
                 };
 
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -54,13 +56,13 @@ namespace MyMovies.Services
 
             if (user == null)
             {
-                var newuser = new User();
-                newuser.Username = user.Username;
-                newuser.Password = user.Password;
+                var newUser = new User();
+                newUser.Username = username;
+                newUser.Password = password;
+                newUser.Password = BCrypt.Net.BCrypt.HashPassword(password);
 
-                UsersRepo.Add(newuser);
+                UsersRepo.Add(newUser);
                 response.IsSuccessful = true;
-
                 return response;
             }
             else

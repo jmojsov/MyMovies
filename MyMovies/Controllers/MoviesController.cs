@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace MyMovies.Controllers
 {
-    [Authorize]
+    [Authorize(Policy = "IsAdmin")]
     public class MoviesController : Controller
     {
         public IMoviesService MoviesService { get; set; }
@@ -19,19 +19,28 @@ namespace MyMovies.Controllers
         [AllowAnonymous]
         public IActionResult Overview(string title)
         {
+            var movieOverviewData = new MovieOverviewDataModel();
             var movies = MoviesService.GetByTitle(title);
             var overviewViewModels = movies
                 .Select(x => ModelConvertor.ConvertToOverviewModel(x))
                 .ToList();
 
-            return View(overviewViewModels);
+            var sidebarData = MoviesService.GetSidebarData();
+
+            movieOverviewData.Movies = overviewViewModels;
+            movieOverviewData.SiedbarData = sidebarData;
+
+            return View(movieOverviewData);
         }
         [AllowAnonymous]
         public IActionResult Details(int id)
         {
             var movie = MoviesService.GetMovieDetails(id);
+            var sidebarData = MoviesService.GetSidebarData();
+
 
             var movieDetails = ModelConvertor.ConvertToMovieDetailsModel(movie);
+            movieDetails.SidebarData = sidebarData;
 
             return View(movieDetails);
         }
@@ -56,6 +65,7 @@ namespace MyMovies.Controllers
                 return View(createMovie);
             }
         }
+
         public IActionResult ModifyOverview()
         {
             var movies = MoviesService.GetAll();

@@ -39,3 +39,5 @@ C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.dl
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Auth\SignIn.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Auth\SignUp.cshtml.g.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Auth\AccessDenied.cshtml.g.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Shared\SidebarPartial.cshtml.g.cs

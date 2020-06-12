@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -50,15 +45,22 @@ namespace MyMovies
                 options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             })
-                .AddCookie(options =>
+            .AddCookie(options =>
                 {
                     options.LoginPath = "/auth/signin";
+                    options.AccessDeniedPath = "/auth/accessDenied";
                 });
+
+            services.AddAuthorization(options => options.AddPolicy("IsAdmin", policy => policy.RequireClaim("IsAdmin", "True")));
+
+
 
             services.AddTransient<IMovieRepository, MovieRepository>();
             services.AddTransient<IMoviesService, MoviesService>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IAuthService, AuthService>();
+            services.AddTransient<IMovieCommentRepository, MovieCommentRepository>();
+            services.AddTransient<IMovieCommentService, MovieCommentService>();
 
 
 
