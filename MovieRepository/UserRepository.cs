@@ -23,5 +23,33 @@ namespace MyMovies.Repositories
             Context.Users.Add(user);
             Context.SaveChanges();
         }
+
+        public List<User> GetAll()
+        {
+            return Context.Users.ToList();
+        }
+
+        public void Delete(int id)
+        {
+            var user = new User
+            {
+                Id = id
+            };
+
+            Context.Remove(user);
+            Context.SaveChanges();
+        }
+
+        public User GetById(int id)
+        {
+            return Context.Users.FirstOrDefault(x => x.Id == id);
+        }
+
+        public void Update(User dbUser)
+        {
+            Context.Users.Update(dbUser);
+            Context.SaveChanges();
+
+        }
     }
 }

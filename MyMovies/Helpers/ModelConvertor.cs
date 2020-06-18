@@ -97,5 +97,42 @@ namespace MyMovies.Helpers
                 Views = movie.Views
             };
         }
+        public static ModifyUserOverviewModel ConvertToModifyUserOverview(User user)
+        {
+            return new ModifyUserOverviewModel
+            {
+               Id = user.Id,
+               Username = user.Username,
+               IsAdmin = user.IsAdmin
+            };
+        }
+        public static UserModifyModel ConvertToUserModifyModel(User user)
+        {
+            return new UserModifyModel()
+            {
+                Id = user.Id,
+                Username = user.Username,
+                IsAdmin = user.IsAdmin
+            };
+        }
+        public static User ConvertFromUserModifyModel(UserModifyModel userModifyModel)
+        {
+            return new User()
+            {
+                Id = userModifyModel.Id,
+                Username = userModifyModel.Username,
+                IsAdmin = userModifyModel.IsAdmin
+            };
+        }
+
+        internal static ModifyUserOverviewModel ConvertToUserDetailsModel(User user)
+        {
+            return new ModifyUserOverviewModel()
+            {
+                Id = user.Id,
+                Username = user.Username,
+                IsAdmin = user.IsAdmin
+            };
+        }
     }
 }
