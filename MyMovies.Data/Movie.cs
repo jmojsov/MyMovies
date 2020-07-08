@@ -22,5 +22,6 @@ namespace MyMovies.Data
         public DateTime? DateCreated { get; set; }
         public int Views { get; set; }
         public List<MovieComment> MovieComments { get; set; }
+        public List<MovieLike> MovieLikes { get; set; }
     }
 }

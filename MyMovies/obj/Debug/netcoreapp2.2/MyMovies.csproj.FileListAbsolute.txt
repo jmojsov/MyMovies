@@ -1,10 +1,6 @@
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.csprojAssemblyReference.cache
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorAssemblyInfo.cache
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorAssemblyInfo.cs
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.AssemblyInfoInputs.cache
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.AssemblyInfo.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\libman.json
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.deps.json
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.runtimeconfig.json
@@ -19,6 +15,11 @@ C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Se
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Services.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Data.pdb
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\bin\Debug\netcoreapp2.2\MyMovies.Repositories.pdb
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.csprojAssemblyReference.cache
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorAssemblyInfo.cache
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorAssemblyInfo.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.AssemblyInfoInputs.cache
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.AssemblyInfo.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.TagHelpers.input.cache
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.TagHelpers.output.cache
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.RazorCoreGenerate.cache
@@ -36,6 +37,7 @@ C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Users\ChangePassword.cshtml.g.cs
+C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Users\Modify.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Users\ModifyUserOverview.cshtml.g.cs
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Users\UserModified.cshtml.g.cs
@@ -45,4 +47,3 @@ C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.Vi
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.csproj.CopyComplete
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.dll
 C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\MyMovies.pdb
-C:\Users\Joco\Desktop\CODE\MyMovies\MyMovies\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.cshtml.g.cs

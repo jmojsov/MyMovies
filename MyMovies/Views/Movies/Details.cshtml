@@ -25,6 +25,12 @@
         <h2>Date Created:</h2>
         <p>@Model.DateCreated</p>
 
+        @if (User.Identity.IsAuthenticated)
+        {
+            <button class="btn btn-success" onclick="MovieLike(@Model.Id)">Like</button>
+            <button class="btn btn-danger" onclick="MovieDislike(@Model.Id)">Dislike</button>
+        }
+
 
         <h1>Comments</h1>
 
@@ -36,7 +42,7 @@
                     <label for="comment" class="control-label">Comment</label>
                     <textarea id="comment" name="comment" class="form-control"></textarea>
                 </div>
-                    <button type="submit"  class="btn btn-primary" >Comment</button>
+                <button type="submit" class="btn btn-primary">Comment</button>
 
             </form>
 
@@ -54,17 +60,8 @@
     </div>
 </div>
 @section Scripts{
-    <script>
-        function ValidateComment() {
-            var comment = document.getElementById("comment").value;
+    <script src="~/lib/" ></script>
+    <script src="~/js/custom/moviedetails.js"></script>
 
-            if (comment == null || comment == " ") {
-                alert("Please enter comment");
-                return false;
-            }
-            else {
-                return true;
-            }
-        }
-    </script>
 }
+
